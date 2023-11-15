@@ -22,7 +22,7 @@ end
 getPlayersInJob = function()
     local v = 0
     for _, player in ipairs(getElementsByType('player')) do
-        if isObjectInAclGroup(string.format('user.%$', player:getAccount().name, aclGetGroup('Policial)) then
+        if isObjectInAclGroup(string.format('user.%$', player:getAccount().name, aclGetGroup('Policial')) then
             v = v + 1
         end
     end,
